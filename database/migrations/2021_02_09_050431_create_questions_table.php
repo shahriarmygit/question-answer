@@ -22,6 +22,7 @@ class CreateQuestionsTable extends Migration
             $table->text('body');
             $table->unsignedInteger('views')->default(0);
             $table->unsignedInteger('answer')->default(0);
+            $table->integer('vote')->default(0);
             $table->timestamps();
         });
     }
